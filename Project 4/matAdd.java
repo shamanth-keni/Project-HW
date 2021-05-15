@@ -6,6 +6,10 @@
            int rows = scanner.nextInt();
            System.out.print("Enter number of columns in matrix : ");
            int columns = scanner.nextInt();
+     if(rows!=columns){
+               System.out.println("Not the same Dimensions ");
+               System.exit(0);
+           }
            int[][] matrix1 = new int[rows][columns];
            int[][] matrix2 = new int[rows][columns];
            
