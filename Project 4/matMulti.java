@@ -9,7 +9,10 @@ import java.util.Scanner;
         int columnsMatrix1RowsMatrix2 = scanner.nextInt();        
         System.out.print("Enter number of columns in second matrix : ");
         int columnsMatrix2 = scanner.nextInt();
-        
+        if(rowsMatrix1!=columnsMatrix2 ){
+        System.out.println("Not the same Dimensions ");
+        System.exit(0);
+       }
         int[][] matrix1 = new int[rowsMatrix1][columnsMatrix1RowsMatrix2];
         int[][] matrix2 = new int[columnsMatrix1RowsMatrix2][columnsMatrix2];
         System.out.println("Enter the first matrix in elements :");
